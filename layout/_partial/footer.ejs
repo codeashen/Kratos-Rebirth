@@ -36,6 +36,7 @@
             <div class="row">
                 <div class="col-md-6 col-md-offset-3 footer-list text-center">
                     <ul class="kratos-social-icons">
+                        <% if (theme.contact.bilibili) {%><li><a target="_blank" rel="nofollow" href="https://space.bilibili.com/<%- theme.contact.bilibili %>/"><i class="fa fa-bold"></i></a></li><% } %>
                         <% if (theme.contact.weibo) {%><li><a target="_blank" rel="nofollow" href="https://weibo.com/u/<%- theme.contact.weibo %>"><i class="fa fa-weibo"></i></a></li><% } %>
                         <% if (theme.contact.mail) {%><li><a href="mailto:<%- theme.contact.mail %>"><i class="fa fa-envelope"></i></a></li><% } %>
                         <% if (theme.contact.telegram) {%><li><a target="_blank" rel="nofollow" href="https://t.me/<%- theme.contact.telegram %>"><i class="fa fa-telegram"></i></a></li><% } %>
@@ -52,13 +53,13 @@
                             <li><%- theme.timenotice %><span id="span_dt">Loading...</span></li>
                         </div>
                         <div>
-                            <li>Theme <a href="https://github.com/Candinya/Kratos-Rebirth" target="_blank">Kratos:Rebirth</a></li>
+                            <!-- <li>Theme <a href="https://github.com/Candinya/Kratos-Rebirth" target="_blank">Kratos:Rebirth</a></li> -->
                             <li>Site built with&nbsp;<i class="fa fa-heart throb" style="color:#d43f57"></i>&nbsp;by <%- config.author %>.</li>
                         </div>
-                        <div>
+                        <!-- <div>
                             <li>Powered by <a href="https://hexo.io" target="_blank" rel="nofollow">Hexo</a></li>
                             <% if (theme.hoster) {%><li>Hosted on <%- theme.hoster %></li><% } %>
-                        </div>
+                        </div> -->
                         <div>
                             <% if (theme.icp) {%><li><a href="https://beian.miit.gov.cn" rel="external nofollow" target="_blank"><%- theme.icp %></a></li><% } %>
                             <% if (theme.psr) {%><li><a href="http://www.beian.gov.cn" rel="external nofollow" target="_blank"><img src="/images/psr.webp" width="12" height="12"><%- theme.psr %></a></li><% } %>
